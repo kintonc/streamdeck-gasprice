@@ -2,7 +2,7 @@ $SD.on("connected", _ => {
     const getGasPrices = async (context, apiKey, silent = false) => {
         console.log("Fetching gas prices")
         if (!silent) $SD.api.setTitle(context, "Fetching\nGas Prices")
-        const res = await fetch(`https://data-api.defipulse.com/api/v1/egs/api/ethgasAPI.json?api-key=${apiKey}`)
+        const res = await fetch(`https://ethgasstation.info/api/ethgasAPI.json?api-key=${apiKey}`)
         if (!res.ok) return $SD.api.setTitle(context, "Invalid\nAPI Key")
         const json = await res.json()
         console.log(json)
