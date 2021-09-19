@@ -1,0 +1,37 @@
+{
+    "Actions": [
+        {
+            "Icon": "logo",
+            "Name": "Ethereum Gas Price",
+            "States": [
+                {
+                    "Image": "icon"
+                }
+            ], 
+            "Tooltip": "Displays the current Ethereum gas price",
+            "UUID": "lgbt.lily.gasprice.action"
+        }
+    ],
+    "SDKVersion": 2,
+    "Author": "Lily Rose",
+    "CodePath": "index.html",
+    "PropertyInspectorPath": "propertyinspector/index.html",
+    "Description": "Displays the current Ethereum gas price",
+    "Name": "Ethereum Gas Price",
+    "Icon": "logo",
+    "URL": "https://github.com/LilyRose2798/streamdeck-gasprice",
+    "Version": "1.0.0",
+    "OS": [
+        {
+            "Platform": "mac",
+            "MinimumVersion" : "10.11"
+        },
+        {
+            "Platform": "windows",
+            "MinimumVersion" : "10"
+        }
+    ],
+    "Software": {
+        "MinimumVersion" : "4.1"
+    }
+}
