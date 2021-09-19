@@ -20,7 +20,7 @@
     "Name": "Ethereum Gas Price",
     "Icon": "logo",
     "URL": "https://github.com/LilyRose2798/streamdeck-gasprice",
-    "Version": "1.0.1",
+    "Version": "1.0.2",
     "OS": [
         {
             "Platform": "mac",
