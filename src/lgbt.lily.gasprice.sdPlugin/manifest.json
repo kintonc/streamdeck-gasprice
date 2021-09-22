@@ -7,7 +7,7 @@
                 {
                     "Image": "icon"
                 }
-            ], 
+            ],
             "Tooltip": "Displays the current Ethereum gas price",
             "UUID": "lgbt.lily.gasprice.action"
         }

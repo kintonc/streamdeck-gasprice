@@ -1,3 +1,4 @@
+const UUID = "lgbt.lily.gasprice.action"
 const toGwei = x => Math.round(x / 10)
 
 $SD.on("connected", _ => {
@@ -21,7 +22,7 @@ $SD.on("connected", _ => {
         getGasPrices(context, apiKey)
         intervalHandle = setInterval(() => getGasPrices(context, apiKey, true), updateInterval * 1000)
     }
-    $SD.on("lgbt.lily.gasprice.action.willAppear", handleUpdate)
-    $SD.on("lgbt.lily.gasprice.action.keyUp", handleUpdate)
-    $SD.on("lgbt.lily.gasprice.action.didReceiveSettings", handleUpdate)
+    $SD.on(`${UUID}.willAppear`, handleUpdate)
+    $SD.on(`${UUID}.keyUp`, handleUpdate)
+    $SD.on(`${UUID}.didReceiveSettings`, handleUpdate)
 })
