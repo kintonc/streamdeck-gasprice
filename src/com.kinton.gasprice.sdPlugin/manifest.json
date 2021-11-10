@@ -9,18 +9,18 @@
                 }
             ],
             "Tooltip": "Displays the current Ethereum gas price",
-            "UUID": "lgbt.lily.gasprice.action"
+            "UUID": "com.kinton.ethgasprice"
         }
     ],
     "SDKVersion": 2,
-    "Author": "Lily Rose",
+    "Author": "kintonc",
     "CodePath": "index.html",
     "PropertyInspectorPath": "propertyinspector/index.html",
     "Description": "Displays the current Ethereum gas price",
     "Name": "Ethereum Gas Price",
     "Icon": "logo",
-    "URL": "https://github.com/LilyRose2798/streamdeck-gasprice",
-    "Version": "1.0.2",
+    "URL": "https://github.com/kintonc/streamdeck-gasprice",
+    "Version": "1.0.0",
     "OS": [
         {
             "Platform": "mac",

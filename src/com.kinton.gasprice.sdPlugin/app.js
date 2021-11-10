@@ -1,4 +1,4 @@
-const UUID = "lgbt.lily.gasprice.action"
+const UUID = "com.kinton.ethgasprice"
 const toGwei = x => Math.round(x / 10)
 
 $SD.on("connected", _ => {
@@ -8,11 +8,8 @@ $SD.on("connected", _ => {
         if (!res.ok) return $SD.api.setTitle(context, "Invalid\nAPI Key")
         const { safeLow, average, fast, fastest } = await res.json()
         $SD.api.setTitle(context, [
-            `Gas Prices`,
-            `Safe Low: ${toGwei(safeLow)}`,
-            `Average: ${toGwei(average)}`,
-            `Fast: ${toGwei(fast)}`,
-            `Fastest: ${toGwei(fastest)}`
+            `ETH Gas`,
+            `${toGwei(average)}`,
         ].join("\n"))
     }
     let intervalHandle
